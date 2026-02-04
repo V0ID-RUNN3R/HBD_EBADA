@@ -17,7 +17,6 @@
             flex-direction: column;
         }
 
-        /* --- GAME BOARD --- */
         #game-board {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -78,7 +77,6 @@
             text-align: center;
         }
 
-        /* --- GIFT BOX STYLES --- */
         #gift-screen {
             display: none;
             position: absolute;
@@ -125,7 +123,6 @@
             position: absolute; left: 50%; transform: translateX(-50%);
         }
 
-        /* SURPRISE CONTENT */
         .surprise {
             display: none;
             text-align: center;
@@ -137,9 +134,9 @@
             width: 300px;
         }
         .surprise img {
-            width: 250px; /* Made slightly bigger for your photo */
+            width: 250px; 
             height: 250px; 
-            object-fit: cover; /* This crops the rectangle photo into a perfect circle */
+            object-fit: cover; 
             border-radius: 50%; 
             border: 5px solid #ffd700;
             margin-bottom: 20px; 
@@ -157,7 +154,7 @@
             height: 10px;
             background-color: #f00; 
             animation: fall linear forwards;
-            z-index: 100;  /* <--- ADD THIS LINE HERE */
+            z-index: 100;
         }
         @keyframes fall { to { transform: translateY(100vh) rotate(720deg); } }
 
@@ -187,7 +184,6 @@
     </div>
 
     <script>
-        // --- GAME LOGIC ---
         const emojis = ['🎂', '🎂', '🎁', '🎁', '🎈', '🎈', '🎉', '🎉', '🥳', '🥳', '🕯️', '🕯️'];
         let hasFlippedCard = false;
         let lockBoard = false;
@@ -308,5 +304,4 @@
         createBoard();
     </script>
 </body>
-
 </html>
